@@ -13,7 +13,7 @@ body {
     height: 100vh;
 }
 .text-box {
-    margin-left: 42vw;
+    margin-left: 40vw;
 	margin-top: 42vh;
     font-family: 'Pixelify Sans';
 }
@@ -94,8 +94,8 @@ body {
 
 .msg{
     position: absolute;
-    top: 250px;
-    left: 38%;
+    top: 200px;
+    left: 35%;
     width: 500px;
     text-align: center;
     background-color: white;
