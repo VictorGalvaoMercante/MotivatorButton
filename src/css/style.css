@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgba(83, 74, 208, 0.458);
+}
+
+#video{
+    background-image: url(../video/2QwN.gif);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.text-box {
+    margin-left: 42vw;
+	margin-top: 42vh;
+    font-family: 'Pixelify Sans';
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 22pt;
+    padding-left: 2;
+    box-shadow: 1px 5px 10px black;
+}
+
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #e40f0f99;
+    color: #ffffff;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.msg{
+    position: absolute;
+    top: 250px;
+    left: 38%;
+    width: 500px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 5px 10px;
+    font-size: 18pt;
+   
+}
